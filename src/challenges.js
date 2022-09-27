@@ -20,9 +20,13 @@ function splitSentence(param) {
 
 
 // Desafio 4
-function concatName() {
-  
+let array = ['foguete', 'não', 'tem', 'ré']
+function concatName(param) {
+  let newArray = param[param.length-1]+ ', ' + param[0]
+  return newArray
 }
+
+console.log(concatName(array))
 
 // Desafio 5
 function footballPoints() {
