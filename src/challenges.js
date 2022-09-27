@@ -26,13 +26,6 @@ function footballPoints(wins, ties) {
  return (wins *3) + ties
 }
 
-
-
-
-
-
-
-
 // Desafio 6
 // let num = [9, 1, 2, 3, 9, 5, 7];
 // function highestCount (param) {
@@ -54,8 +47,6 @@ function footballPoints(wins, ties) {
 // }
 // console.log(highestCount(num))
 
-
-
 // Desafio 7
 
 function catAndMouse(param1, param2, param3) {
@@ -67,15 +58,6 @@ function catAndMouse(param1, param2, param3) {
     return 'os gatos trombam e o rato foge'
   }
 }
-
-
-
-
-
-
-
-
-
 
 // Desafio 8
 function fizzBuzz() {
