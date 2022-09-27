@@ -20,15 +20,18 @@ function concatName(param) {
   let newArray = param[param.length-1]+ ', ' + param[0]
   return newArray
 }
-
-
-
-console.log(concatName(array))
-
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+
+function footballPoints(wins, ties) {
+ return (wins *3) + ties
 }
+
+
+
+
+
+
+
 
 // Desafio 6
 function highestCount() {
