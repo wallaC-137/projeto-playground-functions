@@ -14,17 +14,14 @@ function splitSentence(param) {
   let array = param.split(' ')
   return array
 }
-
-
-
-
-
 // Desafio 4
 let array = ['foguete', 'não', 'tem', 'ré']
 function concatName(param) {
   let newArray = param[param.length-1]+ ', ' + param[0]
   return newArray
 }
+
+
 
 console.log(concatName(array))
 
