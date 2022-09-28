@@ -25,27 +25,31 @@ function concatName(param) {
 function footballPoints(wins, ties) {
   return (wins * 3) + ties
 }
-
 // Desafio 6
-let num = [9, 1, 2, 3, 9, 5, 7];
 function highestCount (param) {
   let highted = 0;
-
-  for(let index = 0; index < param.length; index += 1){
-    let count = 0;
-
-    for(let index2 = 0; index2 < param.length; index2 += 1){
-      if(param[index] == param[index2]){
-        count += 1;
-      }
+  let temp = 0;
+  for (let index = 0; index < param.length; index += 1){
+  	if (highted === param[index]){
+      temp += 1
+    } else if ( highted < param[index]){
+      highted = param[index]
+      temp = 1
     }
-    if(param[index] > highted){
-      highted = count;
     }
-  }
-  return highted
+    return temp;
 }
-console.log(highestCount(num))
+
+
+
+
+
+
+
+
+
+
+
 
 // Desafio 7
 
