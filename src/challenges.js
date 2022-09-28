@@ -43,8 +43,8 @@ function highestCount(param) {
 // Desafio 7
 
 function catAndMouse(param1, param2, param3) {
-  let cat1 = param2 - param1;
-  let cat2 = param3 - param1;
+  let cat1 = Math.abs(param2 - param1);
+  let cat2 = Math.abs(param3 - param1);
   
   if (cat1 < cat2) {
     return 'cat1';
@@ -53,6 +53,7 @@ function catAndMouse(param1, param2, param3) {
   }	else if (cat1 === cat2){
     return 'os gatos trombam e o rato foge'
   }
+  return cat2
 }
 
 // Desafio 8
