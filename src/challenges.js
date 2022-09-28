@@ -28,38 +28,30 @@ function footballPoints(wins, ties) {
 // Desafio 6
 function highestCount(param) {
   let highted = 0;
-  let temp = 0;
+  let count = 0;
   for (let index = 0; index < param.length; index += 1) {
     if (highted === param[index]) {
-      temp += 1
+      count += 1
     } else if (highted < param[index]) {
       highted = param[index]
-      temp = 1
+      count = 1
     }
   }
-  return temp;
+  return count;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 // Desafio 7
 
 function catAndMouse(param1, param2, param3) {
-  if (param2 < param3) {
+  let cat1 = param2 - param1;
+  let cat2 = param3 - param1;
+  
+  if (cat1 < cat2) {
     return 'cat1';
-  } else if (param3 < param2) {
+  } else if(cat2 < cat1){
     return 'cat2';
-  } else if (param2 === param1 && param3 === param1) {
-    return 'os gatos trombam e o rato foge';
+  }	else if (cat1 === cat2){
+    return 'os gatos trombam e o rato foge'
   }
 }
 
