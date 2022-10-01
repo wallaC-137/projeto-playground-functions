@@ -59,9 +59,24 @@ function generatePhoneNumber(param) {
 }
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA, lineB, lineC) {
+  let result = true
+
+  let medida1 = lineA < (lineB + lineC);
+  let medida1M = lineA > Math.abs(lineB - lineC);
+  let medida2 = lineB < (lineA + lineC);
+  let medida2M = lineB > Math.abs(lineA - lineC);
+  let medida3 = lineC < (lineA + lineB);
+  let medida3M = lineC > Math.abs(lineA - lineB);
+
+  if (medida1 !== true || medida2 !== true || medida3 !== true) {
+    result = false
+  } else if (medida1M !== true || medida2M !== true || medida3M !== true) {
+    result = false
+  }
+  return result
 }
+
 
 // Desafio 13
 function hydrate() {
