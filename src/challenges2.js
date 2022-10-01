@@ -77,10 +77,19 @@ function triangleCheck(lineA, lineB, lineC) {
   return result
 }
 
-
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(param) {
+  let reg = /\d+/g;
+  let result = param.match(reg)
+  let number = 0;
+
+  for (let index of result) {
+    number += index - 0
+  }
+  if (number < 2) {
+    return `${number} copo de água`
+  }
+  return `${number} copos de água`
 }
 
 module.exports = {
